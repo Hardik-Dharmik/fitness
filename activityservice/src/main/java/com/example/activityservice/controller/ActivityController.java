@@ -4,7 +4,6 @@ import com.example.activityservice.dto.ActivityRequest;
 import com.example.activityservice.dto.ActivityResponse;
 import com.example.activityservice.service.ActivityService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
