@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: activityservice
+  data:
+    mongodb:
+      uri: mongodb+srv://hardikdharmik94:DEFY2v75HHMGbq8W@cluster0.24g7xoc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: fitness_activity
+
+server:
+  port: 8082
