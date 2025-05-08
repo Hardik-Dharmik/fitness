@@ -1,6 +1,6 @@
 package com.example.activityservice.service;
 
-import com.example.activityservice.ActivityRepository;
+import com.example.activityservice.repository.ActivityRepository;
 import com.example.activityservice.dto.ActivityRequest;
 import com.example.activityservice.dto.ActivityResponse;
 import com.example.activityservice.mappers.ActivityRequestToActivityMapper;
