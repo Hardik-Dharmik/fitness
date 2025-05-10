@@ -1,16 +1,15 @@
 spring:
   application:
-    name: activityservice
+    name: aiservice
   data:
     mongodb:
       uri: mongodb+srv://hardikdharmik94:DEFY2v75HHMGbq8W@cluster0.24g7xoc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      database: fitness_activity
+      database: fitness_recommendation
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
-
 
 rabbitmq:
   exchange:
@@ -20,12 +19,10 @@ rabbitmq:
   routing:
     key: activity.tracking
 
-server:
-  port: 8082
-
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8083

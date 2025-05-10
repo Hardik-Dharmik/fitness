@@ -37,4 +37,9 @@ public class UserService {
     public List<UserResponse> getAllUsers() {
         return userRepository.findAll().stream().map(UserToUserResponseMapper::toUserResponse).collect(Collectors.toList());
     }
+
+    public Boolean checkIfUserExist(String userId) {
+        System.out.println("Checking if user exists for " + userId);
+        return userRepository.existsById(userId);
+    }
 }
